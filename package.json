@@ -8,7 +8,7 @@
     "queue": "nodemon src/queue.js",
     "dev:debug": "nodemon --inspect src/server.js",
     "build" : "sucrase ./src -d ./dist --transforms imports",
-    "start" : "node dist/server.js"
+    "start" : "node dist/server.js dist/queue.js"
   },
   "dependencies": {
     "@sentry/node": "5.7.1",
